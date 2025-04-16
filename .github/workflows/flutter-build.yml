@@ -1211,7 +1211,7 @@ jobs:
     needs: [build-rustdesk-android]
     name: build rustdesk android universal apk
     if: ${{ inputs.upload-artifact }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       reltype: release
       x86_target: "" # can be ",android-x86"
@@ -1944,7 +1944,7 @@ jobs:
   build-appimage:
     name: Build appimage ${{ matrix.job.target }}
     needs: [build-rustdesk-linux]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: ${{ inputs.upload-artifact }}
     strategy:
       fail-fast: false
@@ -2080,7 +2080,7 @@ jobs:
   build-rustdesk-web:
     if: False
     name: build-rustdesk-web
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
     env:
