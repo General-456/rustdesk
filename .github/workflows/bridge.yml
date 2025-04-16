@@ -40,9 +40,9 @@ jobs:
             gcc \
             git \
             g++ \
-            libclang-10-dev \
+            libclang-dev \
             libgtk-3-dev \
-            llvm-10-dev \
+            llvm-dev \
             nasm \
             ninja-build \
             pkg-config \
@@ -95,4 +95,4 @@ jobs:
             ./flutter/lib/generated_bridge.dart
             ./flutter/lib/generated_bridge.freezed.dart
             ./flutter/macos/Runner/bridge_generated.h
-            ./flutter/ios/Runner/bridge_generated.h
+            ./flutter/ios/Runner/bridge_generated.h    
